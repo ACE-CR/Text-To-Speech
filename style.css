@@ -1,0 +1,66 @@
+
+/* styles.css */
+body {
+    background:linear-gradient(to top, #00ff80, #2600ff);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    background:linear-gradient(to right, #00ff80, #006eff);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+}
+
+h1 {
+    color: #3ff4fa;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    resize: none;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+button {
+    background-color: #2600ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+button:hover {
+    background-color: #000;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    textarea {
+        height: 150px; /* Increase the height for better visibility on small screens */
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
